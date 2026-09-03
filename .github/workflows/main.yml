@@ -1,0 +1,71 @@
+name: Daily Market Scan
+
+on:
+  schedule:
+    # รอบเย็น: 22:30 UTC จันทร์-ศุกร์ = หลังตลาดสหรัฐปิด (~05:30 น. เช้าวันถัดไปในไทย)
+    #          ราคานอกเวลาที่ได้จะเป็นของช่วง after-hours
+    - cron: "30 22 * * 1-5"
+    # รอบเช้า: 13:00 UTC จันทร์-ศุกร์ = ก่อนตลาดสหรัฐเปิด (~20:00 น. เย็นในไทย)
+    #          สัญญาณเหมือนรอบเย็น แต่ราคานอกเวลาเป็นของ pre-market ที่สดกว่า
+    - cron: "0 13 * * 1-5"
+  workflow_dispatch:        # กดรันเองได้จากแท็บ Actions
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: ติดตั้ง dependencies
+        run: pip install -r requirements.txt
+
+      - name: ตรวจสูตรและตรรกะสัญญาณก่อนรันจริง
+        run: |
+          python test_indicators.py
+          python test_scanner.py
+          python test_e2e.py
+
+      - name: สแกนตลาด
+        run: python scanner.py --outdir reports --top 20 --gap-alert 3
+
+      - name: อัปโหลดผลเป็น artifact (ดาวน์โหลดได้จากหน้า Actions)
+        uses: actions/upload-artifact@v7
+        with:
+          name: scan-results
+          path: reports/
+          retention-days: 30
+
+      - name: บันทึกผลกลับเข้า repo
+        run: |
+          git config user.name  "market-scanner-bot"
+          git config user.email "actions@github.com"
+          git add reports/
+          if git diff --staged --quiet; then
+            echo "ไม่มีอะไรเปลี่ยน"
+          else
+            git commit -m "scan: ผลสแกน $(date -u +'%Y-%m-%d %H:%M') UTC"
+            # ดึงของใหม่มารวมก่อน กันชนกันเวลาสองรอบต่อวันทำงานใกล้กัน
+            git pull --rebase --autostash origin "$(git rev-parse --abbrev-ref HEAD)" || true
+            git push
+          fi
+
+      # ── เผยแพร่เป็นเว็บเพจส่วนตัว (เปิด GitHub Pages ที่ Settings > Pages > Source: GitHub Actions) ──
+      - name: เตรียมไฟล์สำหรับ Pages
+        run: |
+          mkdir -p _site
+          cp -r reports/* _site/ 2>/dev/null || true
+          cp reports/latest.html _site/index.html
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+      - uses: actions/deploy-pages@v5
