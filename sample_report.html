@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="th"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Market Scanner — 2025-02-21</title>
+<style>
+:root {
+  --bg:#f6f7f9; --panel:#fff; --ink:#16191d; --muted:#6b7280; --line:#e5e7eb;
+  --up:#0f8a4c; --dn:#c62b32; --accent:#2b5cd9; --good:#0f8a4c; --bad:#c62b32; --warn:#b4740b;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#0f1216; --panel:#171b21; --ink:#e8eaed; --muted:#9aa3af; --line:#2a3038;
+    --up:#3ddc84; --dn:#ff6b6b; --accent:#7aa2ff; --good:#3ddc84; --bad:#ff6b6b; --warn:#e0a94a; }
+}
+* { box-sizing:border-box }
+body { margin:0; background:var(--bg); color:var(--ink);
+  font:14px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans Thai",Roboto,sans-serif; }
+.wrap { max-width:1340px; margin:0 auto; padding:24px 16px 64px }
+header h1 { margin:0 0 4px; font-size:22px; letter-spacing:-.01em }
+header .sub { color:var(--muted); font-size:13px }
+.card { background:var(--panel); border:1px solid var(--line); border-radius:12px;
+  padding:16px; margin:12px 0 }
+.card h2 { margin:0 0 12px; font-size:15px; font-weight:650 }
+h3.side { margin:28px 0 4px; font-size:15px; font-weight:700; letter-spacing:.01em }
+.count { color:var(--muted); font-weight:400; font-size:13px; margin-left:6px }
+.stats { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:12px }
+.stat { padding:10px 12px; border:1px solid var(--line); border-radius:9px }
+.stat b { display:block; font-size:19px; font-weight:650; margin-top:2px }
+.stat span { color:var(--muted); font-size:12px }
+.good { color:var(--good) } .bad { color:var(--bad) } .warn { color:var(--warn) }
+.muted { color:var(--muted) }
+.scroll { overflow-x:auto; -webkit-overflow-scrolling:touch }
+table { border-collapse:collapse; width:100%; min-width:1000px; font-size:13px }
+th { text-align:left; color:var(--muted); font-weight:550; font-size:11.5px;
+  text-transform:uppercase; letter-spacing:.04em; padding:6px 9px;
+  border-bottom:1px solid var(--line); white-space:nowrap }
+td { padding:8px 9px; border-bottom:1px solid var(--line); vertical-align:top }
+tr:last-child td { border-bottom:0 }
+.num { text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap }
+.tk { font-weight:650; letter-spacing:.02em }
+.up { color:var(--up) } .dn { color:var(--dn) }
+.sub { display:block; font-size:11px; color:var(--muted) }
+.earn, .ext { font-size:12px; white-space:nowrap }
+.ext { font-weight:550 }
+.note.warn { border-color:var(--warn); background:color-mix(in srgb,var(--warn) 10%,transparent) }
+.empty { color:var(--muted); text-align:center; padding:22px }
+.score { display:inline-block; min-width:38px; text-align:center; padding:2px 7px; border-radius:6px;
+  font-weight:650; font-size:12px; background:linear-gradient(90deg,
+  color-mix(in srgb,var(--accent) 26%,transparent) var(--w), transparent var(--w)); }
+.note { padding:11px 13px; border-radius:9px; border:1px solid var(--line); margin-top:12px;
+  font-size:13px }
+footer { color:var(--muted); font-size:12px; margin-top:28px; line-height:1.75 }
+</style></head><body><div class="wrap">
+
+<header>
+  <h1>Market Signal Scanner</h1>
+  <div class="sub">หุ้นสหรัฐ · ข้อมูลปิดวันที่ 2025-02-21 ·
+    สแกน 7 ตัว ผ่านตัวกรองสภาพคล่อง 7 ตัว<br>รอบหลังตลาดปิด · ราคานอกเวลาเป็นของ after-hours</div>
+</header>
+
+<section class="card">
+  <h2>สภาพตลาดวันนี้</h2>
+  <div class="stats">
+    <div class="stat"><span>เทรนด์ SPY</span><b class="good">ขาขึ้น</b></div>
+    <div class="stat"><span>ตลาดเอื้อฝั่ง</span><b class="good">ฝั่งซื้อ</b></div>
+    <div class="stat"><span>หุ้นเหนือ EMA50</span><b>57%</b></div>
+    <div class="stat"><span>หุ้นเหนือ SMA200</span><b>57%</b></div>
+    <div class="stat"><span>สัญญาณทั้งหมด</span><b>8</b></div>
+  </div>
+  <div class="note good">ตลาดหนุนฝั่งซื้อ — สัญญาณ breakout มีโอกาสไปต่อสูงกว่าปกติ ส่วนสัญญาณชอร์ตในตลาดแบบนี้โดนบีบกลับบ่อย ควรลดขนาดหรือข้าม</div>
+  <div class="note muted">ตัวกรองวันประกาศงบ: ตัดหุ้นที่จะประกาศงบภายใน 5 วันออกแล้ว (3 สัญญาณ)</div>
+  <div class="note warn"><b>เตือน gap นอกเวลา (2 ตัว)</b> — ราคาขยับเกิน 3% หลังราคาปิดที่ใช้คำนวณ แผนเทรดของตัวเหล่านี้ต้องคิดใหม่:<br><b>LONGA</b> +7.0% · <b>SHRTA</b> +6.0%</div>
+</section>
+
+<h3 class="side up">▲ ฝั่งซื้อ (Long) <span class="count">5 สัญญาณ</span></h3>
+<section class="card">
+  <h2>A · Breakout — ทะลุแนวต้าน 20 วัน <span class="count">2 ตัว</span></h2>
+  <div class="scroll"><table>
+    <thead><tr>
+      <th>หุ้น</th><th>คะแนน</th><th>ราคา</th><th>1 วัน</th><th>RVOL</th><th>RSI</th>
+      <th>ATR%</th><th>จุดเข้า</th><th>ตัดขาดทุน</th><th>เป้าหมาย</th><th>จำนวนหุ้น</th>
+      <th>งบ</th><th>นอกเวลา</th>
+    </tr></thead>
+    <tbody><tr>
+  <td class="tk">LONGA</td>
+  <td><span class="score" style="--w:74%">74</span></td>
+  <td class="num">181.52</td>
+  <td class="num up">+5.3%</td>
+  <td class="num">3.5x</td>
+  <td class="num">90</td>
+  <td class="num">1.9%</td>
+  <td class="num">181.52</td>
+  <td class="num dn">176.28<span class="sub">-2.9%</span></td>
+  <td class="num up">192.00<span class="sub">+5.8%</span></td>
+  <td class="num">35</td>
+  <td class="earn muted">งบอีก 40 วัน</td>
+  <td class="ext warn">+7.0% วิ่งหนีไปแล้ว
+    <span class="sub">หลังตลาดปิด</span></td>
+</tr>
+<tr>
+  <td class="tk">SPY</td>
+  <td><span class="score" style="--w:74%">74</span></td>
+  <td class="num">181.52</td>
+  <td class="num up">+5.3%</td>
+  <td class="num">3.5x</td>
+  <td class="num">90</td>
+  <td class="num">1.9%</td>
+  <td class="num">181.52</td>
+  <td class="num dn">176.28<span class="sub">-2.9%</span></td>
+  <td class="num up">192.00<span class="sub">+5.8%</span></td>
+  <td class="num">35</td>
+  <td class="earn muted">ไม่ทราบวันงบ</td>
+  <td class="ext muted">—
+    </td>
+</tr></tbody>
+  </table></div>
+</section>
+<section class="card">
+  <h2>B · Volume Spike — วอลุ่มพุ่ง ปิดแข็ง <span class="count">2 ตัว</span></h2>
+  <div class="scroll"><table>
+    <thead><tr>
+      <th>หุ้น</th><th>คะแนน</th><th>ราคา</th><th>1 วัน</th><th>RVOL</th><th>RSI</th>
+      <th>ATR%</th><th>จุดเข้า</th><th>ตัดขาดทุน</th><th>เป้าหมาย</th><th>จำนวนหุ้น</th>
+      <th>งบ</th><th>นอกเวลา</th>
+    </tr></thead>
+    <tbody><tr>
+  <td class="tk">LONGA</td>
+  <td><span class="score" style="--w:71%">71</span></td>
+  <td class="num">181.52</td>
+  <td class="num up">+5.3%</td>
+  <td class="num">3.5x</td>
+  <td class="num">90</td>
+  <td class="num">1.9%</td>
+  <td class="num">181.52</td>
+  <td class="num dn">176.28<span class="sub">-2.9%</span></td>
+  <td class="num up">192.00<span class="sub">+5.8%</span></td>
+  <td class="num">35</td>
+  <td class="earn muted">งบอีก 40 วัน</td>
+  <td class="ext warn">+7.0% วิ่งหนีไปแล้ว
+    <span class="sub">หลังตลาดปิด</span></td>
+</tr>
+<tr>
+  <td class="tk">SPY</td>
+  <td><span class="score" style="--w:71%">71</span></td>
+  <td class="num">181.52</td>
+  <td class="num up">+5.3%</td>
+  <td class="num">3.5x</td>
+  <td class="num">90</td>
+  <td class="num">1.9%</td>
+  <td class="num">181.52</td>
+  <td class="num dn">176.28<span class="sub">-2.9%</span></td>
+  <td class="num up">192.00<span class="sub">+5.8%</span></td>
+  <td class="num">35</td>
+  <td class="earn muted">ไม่ทราบวันงบ</td>
+  <td class="ext muted">—
+    </td>
+</tr></tbody>
+  </table></div>
+</section>
+<section class="card">
+  <h2>C · Pullback — ย่อในขาขึ้น (mean reversion) <span class="count">1 ตัว</span></h2>
+  <div class="scroll"><table>
+    <thead><tr>
+      <th>หุ้น</th><th>คะแนน</th><th>ราคา</th><th>1 วัน</th><th>RVOL</th><th>RSI</th>
+      <th>ATR%</th><th>จุดเข้า</th><th>ตัดขาดทุน</th><th>เป้าหมาย</th><th>จำนวนหุ้น</th>
+      <th>งบ</th><th>นอกเวลา</th>
+    </tr></thead>
+    <tbody><tr>
+  <td class="tk">LONGC</td>
+  <td><span class="score" style="--w:71%">71</span></td>
+  <td class="num">154.32</td>
+  <td class="num dn">-1.4%</td>
+  <td class="num">1.0x</td>
+  <td class="num">25</td>
+  <td class="num">2.2%</td>
+  <td class="num">154.32</td>
+  <td class="num dn">149.31<span class="sub">-3.2%</span></td>
+  <td class="num up">164.34<span class="sub">+6.5%</span></td>
+  <td class="num">37</td>
+  <td class="earn muted">งบอีก 30 วัน</td>
+  <td class="ext muted">-0.4%
+    <span class="sub">หลังตลาดปิด</span></td>
+</tr></tbody>
+  </table></div>
+</section><h3 class="side dn">▼ ฝั่งขายชอร์ต (Short) <span class="count">3 สัญญาณ</span></h3>
+<section class="card">
+  <h2>D · Breakdown — หลุดแนวรับ 20 วัน <span class="count">1 ตัว</span></h2>
+  <div class="scroll"><table>
+    <thead><tr>
+      <th>หุ้น</th><th>คะแนน</th><th>ราคา</th><th>1 วัน</th><th>RVOL</th><th>RSI</th>
+      <th>ATR%</th><th>จุดเข้า</th><th>ตัดขาดทุน</th><th>เป้าหมาย</th><th>จำนวนหุ้น</th>
+      <th>งบ</th><th>นอกเวลา</th>
+    </tr></thead>
+    <tbody><tr>
+  <td class="tk">SHRTA</td>
+  <td><span class="score" style="--w:73%">73</span></td>
+  <td class="num">109.79</td>
+  <td class="num dn">-5.3%</td>
+  <td class="num">3.5x</td>
+  <td class="num">13</td>
+  <td class="num">2.2%</td>
+  <td class="num">109.79</td>
+  <td class="num dn">113.43<span class="sub">-3.3%</span></td>
+  <td class="num up">102.51<span class="sub">+6.6%</span></td>
+  <td class="num">51</td>
+  <td class="earn muted">งบอีก 25 วัน</td>
+  <td class="ext bad">+6.0% สวนทาง
+    <span class="sub">หลังตลาดปิด</span></td>
+</tr></tbody>
+  </table></div>
+</section>
+<section class="card">
+  <h2>E · Distribution — วอลุ่มพุ่ง ปิดอ่อน (แรงขาย) <span class="count">1 ตัว</span></h2>
+  <div class="scroll"><table>
+    <thead><tr>
+      <th>หุ้น</th><th>คะแนน</th><th>ราคา</th><th>1 วัน</th><th>RVOL</th><th>RSI</th>
+      <th>ATR%</th><th>จุดเข้า</th><th>ตัดขาดทุน</th><th>เป้าหมาย</th><th>จำนวนหุ้น</th>
+      <th>งบ</th><th>นอกเวลา</th>
+    </tr></thead>
+    <tbody><tr>
+  <td class="tk">SHRTA</td>
+  <td><span class="score" style="--w:71%">71</span></td>
+  <td class="num">109.79</td>
+  <td class="num dn">-5.3%</td>
+  <td class="num">3.5x</td>
+  <td class="num">13</td>
+  <td class="num">2.2%</td>
+  <td class="num">109.79</td>
+  <td class="num dn">113.43<span class="sub">-3.3%</span></td>
+  <td class="num up">102.51<span class="sub">+6.6%</span></td>
+  <td class="num">51</td>
+  <td class="earn muted">งบอีก 25 วัน</td>
+  <td class="ext bad">+6.0% สวนทาง
+    <span class="sub">หลังตลาดปิด</span></td>
+</tr></tbody>
+  </table></div>
+</section>
+<section class="card">
+  <h2>F · Rally Fade — เด้งจนซื้อมากเกินในขาลง <span class="count">1 ตัว</span></h2>
+  <div class="scroll"><table>
+    <thead><tr>
+      <th>หุ้น</th><th>คะแนน</th><th>ราคา</th><th>1 วัน</th><th>RVOL</th><th>RSI</th>
+      <th>ATR%</th><th>จุดเข้า</th><th>ตัดขาดทุน</th><th>เป้าหมาย</th><th>จำนวนหุ้น</th>
+      <th>งบ</th><th>นอกเวลา</th>
+    </tr></thead>
+    <tbody><tr>
+  <td class="tk">SHRTC</td>
+  <td><span class="score" style="--w:72%">72</span></td>
+  <td class="num">141.89</td>
+  <td class="num up">+1.3%</td>
+  <td class="num">1.0x</td>
+  <td class="num">74</td>
+  <td class="num">2.0%</td>
+  <td class="num">141.89</td>
+  <td class="num dn">146.11<span class="sub">-3.0%</span></td>
+  <td class="num up">133.46<span class="sub">+5.9%</span></td>
+  <td class="num">44</td>
+  <td class="earn warn">เพิ่งประกาศงบ (02 Sep)</td>
+  <td class="ext muted">+1.1%
+    <span class="sub">หลังตลาดปิด</span></td>
+</tr></tbody>
+  </table></div>
+</section>
+
+<footer>
+  <b>วิธีอ่าน</b> — คะแนนเต็ม 100 คิดจากแรงวอลุ่ม ความแรงเทรนด์ โมเมนตัม และตำแหน่งราคา
+  ยิ่งสูงยิ่งเข้าเงื่อนไขครบ ไม่ได้แปลว่ากำไรแน่นอน ·
+  คอลัมน์ "ตัดขาดทุน" ของฝั่งชอร์ตจะอยู่<i>เหนือ</i>ราคาเข้า และ "เป้าหมาย" อยู่<i>ใต้</i>ราคาเข้า<br>
+  จุดตัดขาดทุน = 1.5×ATR · เป้าหมาย = 3.0×ATR (อัตราส่วน 2:1)
+  · จำนวนหุ้นคำนวณจากพอร์ต $25,000 เสี่ยง 0.75% ต่อไม้<br><br>
+  <b>คอลัมน์ "นอกเวลา"</b> — ราคาล่าสุดในช่วง pre-market หรือ after-hours เทียบกับราคาปิดที่ใช้คำนวณแผน
+  <span class="bad">แดง = วิ่งสวนทางที่จะเทรด</span> (แผนเสีย ข้ามไป) ·
+  <span class="warn">เหลือง = วิ่งหนีไปทางเดียวกับเราแล้ว</span> (เข้าที่ราคาเดิมไม่ได้ ไล่ราคาเสี่ยง) ·
+  เทา = ขยับน้อย แผนยังใช้ได้<br>
+  <b>ระวัง</b> — นอกเวลาทำการวอลุ่มบางมาก ราคาขยับได้ด้วยไม้เล็ก ๆ และมักกลับทางตอนตลาดเปิดจริง
+  ใช้เป็นสัญญาณเตือนว่า "ต้องดูใหม่" ไม่ใช่ราคาที่จะได้จริง<br><br>
+  <b>เรื่องการชอร์ต</b> — ต้องมีบัญชี margin และหุ้นต้องมีให้ยืม (บางตัวยืมไม่ได้หรือค่ายืมแพงมาก)
+  ขาดทุนฝั่งชอร์ตไม่มีเพดาน และการบีบชอร์ต (short squeeze) เกิดเร็วมาก
+  สคริปต์ไม่ได้เช็กสถานะการยืมหุ้นให้ ต้องดูในโบรกเกอร์เอง<br><br>
+  <b>ข้อจำกัด</b> — เป็นเครื่องมือ<i>คัดกรอง</i>เพื่อย่นเวลาหาหุ้นไปดูกราฟต่อ ไม่ใช่คำแนะนำการลงทุน
+  ไม่ได้กรองข่าวหรือเหตุการณ์พิเศษ วันประกาศงบดึงจาก Yahoo ซึ่งบางครั้งไม่อัปเดต
+  ควรตรวจกราฟและปฏิทินข่าวก่อนตัดสินใจทุกครั้ง และทดสอบด้วยเงินจำลองก่อนใช้เงินจริง
+</footer>
+</div></body></html>
