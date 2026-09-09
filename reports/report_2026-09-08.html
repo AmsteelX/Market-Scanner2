@@ -54,7 +54,7 @@ footer { color:var(--muted); font-size:12px; margin-top:28px; line-height:1.75 }
 <header>
   <h1>Market Signal Scanner</h1>
   <div class="sub">หุ้นสหรัฐ · ข้อมูลปิดวันที่ 2026-09-08 ·
-    สแกน 245 ตัว ผ่านตัวกรองสภาพคล่อง 234 ตัว<br>รอบหลังตลาดปิด · ราคานอกเวลาเป็นของ after-hours</div>
+    สแกน 245 ตัว ผ่านตัวกรองสภาพคล่อง 234 ตัว<br>รอบก่อนตลาดเปิด · ราคานอกเวลาเป็นของ pre-market</div>
 </header>
 
 <section class="card">
@@ -68,7 +68,7 @@ footer { color:var(--muted); font-size:12px; margin-top:28px; line-height:1.75 }
   </div>
   <div class="note good">ตลาดก้ำกึ่ง — ทั้งสองฝั่งมีสัญญาณหลอกเยอะ เลือกเฉพาะคะแนนสูงและลดขนาดไม้ลง</div>
   <div class="note muted">ตัวกรองวันประกาศงบ: ตัดหุ้นที่จะประกาศงบภายใน 5 วันออกแล้ว (1 สัญญาณ)</div>
-  <div class="note muted">ราคานอกเวลาทำการ: ไม่มีตัวไหนขยับเกิน 3% — แผนเทรดในตารางยังใช้ได้</div>
+  <div class="note warn"><b>เตือน gap นอกเวลา (1 ตัว)</b> — ราคาขยับเกิน 3% หลังราคาปิดที่ใช้คำนวณ แผนเทรดของตัวเหล่านี้ต้องคิดใหม่:<br><b>META</b> +5.0%</div>
 </section>
 
 <h3 class="side up">▲ ฝั่งซื้อ (Long) <span class="count">19 สัญญาณ</span></h3>
@@ -114,9 +114,9 @@ footer { color:var(--muted); font-size:12px; margin-top:28px; line-height:1.75 }
   <td class="num dn">166.27<span class="sub">-4.7%</span></td>
   <td class="num up">191.08<span class="sub">+9.5%</span></td>
   <td class="num">12</td>
-  <td class="earn muted">งบอีก 58 วัน</td>
-  <td class="ext muted">-0.9%
-    <span class="sub">หลังตลาดปิด</span></td>
+  <td class="earn muted">งบอีก 57 วัน</td>
+  <td class="ext muted">-1.0%
+    <span class="sub">ก่อนเปิดตลาด</span></td>
 </tr>
 <tr>
   <td class="tk">DXCM</td>
@@ -130,25 +130,25 @@ footer { color:var(--muted); font-size:12px; margin-top:28px; line-height:1.75 }
   <td class="num dn">80.67<span class="sub">-4.6%</span></td>
   <td class="num up">92.24<span class="sub">+9.1%</span></td>
   <td class="num">25</td>
-  <td class="earn muted">งบอีก 51 วัน</td>
-  <td class="ext muted">-0.4%
-    <span class="sub">หลังตลาดปิด</span></td>
+  <td class="earn muted">งบอีก 50 วัน</td>
+  <td class="ext muted">+0.0%
+    <span class="sub">ก่อนเปิดตลาด</span></td>
 </tr>
 <tr>
   <td class="tk">AMGN</td>
   <td><span class="score" style="--w:49%">49</span></td>
   <td class="num">393.17</td>
   <td class="num dn">-10.1%</td>
-  <td class="num">2.9x</td>
+  <td class="num">3.1x</td>
   <td class="num">37</td>
   <td class="num">3.1%</td>
   <td class="num">393.17</td>
   <td class="num dn">374.92<span class="sub">-4.6%</span></td>
   <td class="num up">429.68<span class="sub">+9.3%</span></td>
   <td class="num">5</td>
-  <td class="earn muted">งบอีก 56 วัน</td>
-  <td class="ext muted">+0.1%
-    <span class="sub">หลังตลาดปิด</span></td>
+  <td class="earn muted">งบอีก 55 วัน</td>
+  <td class="ext muted">+0.0%
+    <span class="sub">ก่อนเปิดตลาด</span></td>
 </tr>
 <tr>
   <td class="tk">SBUX</td>
@@ -162,25 +162,25 @@ footer { color:var(--muted); font-size:12px; margin-top:28px; line-height:1.75 }
   <td class="num dn">98.27<span class="sub">-3.7%</span></td>
   <td class="num up">109.49<span class="sub">+7.3%</span></td>
   <td class="num">26</td>
-  <td class="earn muted">งบอีก 50 วัน</td>
-  <td class="ext muted">-0.6%
-    <span class="sub">หลังตลาดปิด</span></td>
+  <td class="earn muted">งบอีก 49 วัน</td>
+  <td class="ext muted">-0.3%
+    <span class="sub">ก่อนเปิดตลาด</span></td>
 </tr>
 <tr>
   <td class="tk">APD</td>
   <td><span class="score" style="--w:43%">43</span></td>
   <td class="num">297.71</td>
   <td class="num dn">-1.2%</td>
-  <td class="num">1.0x</td>
+  <td class="num">1.1x</td>
   <td class="num">44</td>
   <td class="num">2.1%</td>
   <td class="num">297.71</td>
   <td class="num dn">288.31<span class="sub">-3.2%</span></td>
   <td class="num up">316.52<span class="sub">+6.3%</span></td>
   <td class="num">10</td>
-  <td class="earn muted">งบอีก 58 วัน</td>
-  <td class="ext muted">+0.1%
-    <span class="sub">หลังตลาดปิด</span></td>
+  <td class="earn muted">งบอีก 57 วัน</td>
+  <td class="ext muted">-0.4%
+    <span class="sub">ก่อนเปิดตลาด</span></td>
 </tr>
 <tr>
   <td class="tk">GD</td>
@@ -191,26 +191,26 @@ footer { color:var(--muted); font-size:12px; margin-top:28px; line-height:1.75 }
   <td class="num">29</td>
   <td class="num">2.0%</td>
   <td class="num">356.58</td>
-  <td class="num dn">345.83<span class="sub">-3.0%</span></td>
+  <td class="num dn">345.82<span class="sub">-3.0%</span></td>
   <td class="num up">378.09<span class="sub">+6.0%</span></td>
   <td class="num">9</td>
-  <td class="earn muted">งบอีก 50 วัน</td>
-  <td class="ext muted">+0.0%
-    <span class="sub">หลังตลาดปิด</span></td>
+  <td class="earn muted">งบอีก 49 วัน</td>
+  <td class="ext muted">+0.1%
+    <span class="sub">ก่อนเปิดตลาด</span></td>
 </tr>
 <tr>
   <td class="tk">BLK</td>
   <td><span class="score" style="--w:40%">40</span></td>
   <td class="num">1,095.37</td>
   <td class="num dn">-2.4%</td>
-  <td class="num">0.9x</td>
+  <td class="num">1.0x</td>
   <td class="num">41</td>
   <td class="num">2.2%</td>
   <td class="num">1,095.37</td>
   <td class="num dn">1,060.04<span class="sub">-3.2%</span></td>
   <td class="num up">1,166.04<span class="sub">+6.5%</span></td>
   <td class="num">2</td>
-  <td class="earn muted">งบอีก 36 วัน</td>
+  <td class="earn muted">งบอีก 35 วัน</td>
   <td class="ext muted">+0.0%
     <span class="sub">หลังตลาดปิด</span></td>
 </tr>
@@ -226,9 +226,9 @@ footer { color:var(--muted); font-size:12px; margin-top:28px; line-height:1.75 }
   <td class="num dn">116.77<span class="sub">-5.9%</span></td>
   <td class="num up">138.57<span class="sub">+11.7%</span></td>
   <td class="num">13</td>
-  <td class="earn muted">งบอีก 85 วัน</td>
-  <td class="ext muted">+0.8%
-    <span class="sub">หลังตลาดปิด</span></td>
+  <td class="earn muted">งบอีก 84 วัน</td>
+  <td class="ext muted">-0.1%
+    <span class="sub">ก่อนเปิดตลาด</span></td>
 </tr>
 <tr>
   <td class="tk">MMM</td>
@@ -242,25 +242,25 @@ footer { color:var(--muted); font-size:12px; margin-top:28px; line-height:1.75 }
   <td class="num dn">162.42<span class="sub">-3.0%</span></td>
   <td class="num up">177.73<span class="sub">+6.1%</span></td>
   <td class="num">19</td>
-  <td class="earn muted">งบอีก 42 วัน</td>
-  <td class="ext muted">-0.0%
-    <span class="sub">หลังตลาดปิด</span></td>
+  <td class="earn muted">งบอีก 41 วัน</td>
+  <td class="ext muted">-0.8%
+    <span class="sub">ก่อนเปิดตลาด</span></td>
 </tr>
 <tr>
   <td class="tk">LLY</td>
   <td><span class="score" style="--w:29%">29</span></td>
   <td class="num">1,123.91</td>
   <td class="num dn">-2.2%</td>
-  <td class="num">0.9x</td>
+  <td class="num">1.0x</td>
   <td class="num">37</td>
   <td class="num">3.2%</td>
   <td class="num">1,123.91</td>
   <td class="num dn">1,070.69<span class="sub">-4.7%</span></td>
   <td class="num up">1,230.35<span class="sub">+9.5%</span></td>
   <td class="num">1</td>
-  <td class="earn muted">งบอีก 51 วัน</td>
-  <td class="ext muted">+0.2%
-    <span class="sub">หลังตลาดปิด</span></td>
+  <td class="earn muted">งบอีก 50 วัน</td>
+  <td class="ext muted">+0.1%
+    <span class="sub">ก่อนเปิดตลาด</span></td>
 </tr>
 <tr>
   <td class="tk">CL</td>
@@ -272,11 +272,11 @@ footer { color:var(--muted); font-size:12px; margin-top:28px; line-height:1.75 }
   <td class="num">2.0%</td>
   <td class="num">88.41</td>
   <td class="num dn">85.81<span class="sub">-2.9%</span></td>
-  <td class="num up">93.60<span class="sub">+5.9%</span></td>
+  <td class="num up">93.61<span class="sub">+5.9%</span></td>
   <td class="num">38</td>
-  <td class="earn muted">งบอีก 52 วัน</td>
-  <td class="ext muted">-0.0%
-    <span class="sub">หลังตลาดปิด</span></td>
+  <td class="earn muted">งบอีก 51 วัน</td>
+  <td class="ext muted">-0.5%
+    <span class="sub">ก่อนเปิดตลาด</span></td>
 </tr>
 <tr>
   <td class="tk">RTX</td>
@@ -290,9 +290,9 @@ footer { color:var(--muted); font-size:12px; margin-top:28px; line-height:1.75 }
   <td class="num dn">192.26<span class="sub">-3.3%</span></td>
   <td class="num up">211.91<span class="sub">+6.6%</span></td>
   <td class="num">15</td>
-  <td class="earn muted">งบอีก 42 วัน</td>
-  <td class="ext muted">+0.0%
-    <span class="sub">หลังตลาดปิด</span></td>
+  <td class="earn muted">งบอีก 41 วัน</td>
+  <td class="ext muted">-0.1%
+    <span class="sub">ก่อนเปิดตลาด</span></td>
 </tr>
 <tr>
   <td class="tk">XLP</td>
@@ -307,22 +307,22 @@ footer { color:var(--muted); font-size:12px; margin-top:28px; line-height:1.75 }
   <td class="num up">87.24<span class="sub">+3.8%</span></td>
   <td class="num">62</td>
   <td class="earn muted">ไม่ทราบวันงบ</td>
-  <td class="ext muted">-0.1%
-    <span class="sub">หลังตลาดปิด</span></td>
+  <td class="ext muted">-0.4%
+    <span class="sub">ก่อนเปิดตลาด</span></td>
 </tr>
 <tr>
   <td class="tk">CB</td>
   <td><span class="score" style="--w:28%">28</span></td>
   <td class="num">336.64</td>
   <td class="num dn">-1.4%</td>
-  <td class="num">0.9x</td>
+  <td class="num">1.0x</td>
   <td class="num">43</td>
   <td class="num">1.8%</td>
   <td class="num">336.64</td>
-  <td class="num dn">327.76<span class="sub">-2.6%</span></td>
-  <td class="num up">354.40<span class="sub">+5.3%</span></td>
+  <td class="num dn">327.75<span class="sub">-2.6%</span></td>
+  <td class="num up">354.43<span class="sub">+5.3%</span></td>
   <td class="num">11</td>
-  <td class="earn muted">งบอีก 49 วัน</td>
+  <td class="earn muted">งบอีก 48 วัน</td>
   <td class="ext muted">-0.0%
     <span class="sub">หลังตลาดปิด</span></td>
 </tr>
@@ -336,11 +336,11 @@ footer { color:var(--muted); font-size:12px; margin-top:28px; line-height:1.75 }
   <td class="num">3.7%</td>
   <td class="num">114.35</td>
   <td class="num dn">108.00<span class="sub">-5.6%</span></td>
-  <td class="num up">127.04<span class="sub">+11.1%</span></td>
+  <td class="num up">127.05<span class="sub">+11.1%</span></td>
   <td class="num">15</td>
-  <td class="earn muted">งบอีก 51 วัน</td>
-  <td class="ext muted">+0.3%
-    <span class="sub">หลังตลาดปิด</span></td>
+  <td class="earn muted">งบอีก 50 วัน</td>
+  <td class="ext muted">+0.1%
+    <span class="sub">ก่อนเปิดตลาด</span></td>
 </tr>
 <tr>
   <td class="tk">PSA</td>
@@ -351,10 +351,10 @@ footer { color:var(--muted); font-size:12px; margin-top:28px; line-height:1.75 }
   <td class="num">34</td>
   <td class="num">2.1%</td>
   <td class="num">301.60</td>
-  <td class="num dn">292.04<span class="sub">-3.2%</span></td>
-  <td class="num up">320.71<span class="sub">+6.3%</span></td>
+  <td class="num dn">292.03<span class="sub">-3.2%</span></td>
+  <td class="num up">320.73<span class="sub">+6.3%</span></td>
   <td class="num">10</td>
-  <td class="earn muted">งบอีก 50 วัน</td>
+  <td class="earn muted">งบอีก 49 วัน</td>
   <td class="ext muted">-0.0%
     <span class="sub">หลังตลาดปิด</span></td>
 </tr>
@@ -370,7 +370,7 @@ footer { color:var(--muted); font-size:12px; margin-top:28px; line-height:1.75 }
   <td class="num dn">260.66<span class="sub">-3.0%</span></td>
   <td class="num up">284.76<span class="sub">+6.0%</span></td>
   <td class="num">12</td>
-  <td class="earn muted">งบอีก 45 วัน</td>
+  <td class="earn muted">งบอีก 44 วัน</td>
   <td class="ext muted">-0.0%
     <span class="sub">หลังตลาดปิด</span></td>
 </tr>
@@ -387,8 +387,8 @@ footer { color:var(--muted); font-size:12px; margin-top:28px; line-height:1.75 }
   <td class="num up">181.56<span class="sub">+4.1%</span></td>
   <td class="num">25</td>
   <td class="earn muted">ไม่ทราบวันงบ</td>
-  <td class="ext muted">+0.1%
-    <span class="sub">หลังตลาดปิด</span></td>
+  <td class="ext muted">-0.3%
+    <span class="sub">ก่อนเปิดตลาด</span></td>
 </tr>
 <tr>
   <td class="tk">AFL</td>
@@ -402,7 +402,7 @@ footer { color:var(--muted); font-size:12px; margin-top:28px; line-height:1.75 }
   <td class="num dn">112.26<span class="sub">-2.5%</span></td>
   <td class="num up">120.97<span class="sub">+5.0%</span></td>
   <td class="num">34</td>
-  <td class="earn muted">งบอีก 57 วัน</td>
+  <td class="earn muted">งบอีก 56 วัน</td>
   <td class="ext muted">-0.0%
     <span class="sub">หลังตลาดปิด</span></td>
 </tr></tbody>
@@ -418,23 +418,23 @@ footer { color:var(--muted); font-size:12px; margin-top:28px; line-height:1.75 }
     </tr></thead>
     <tbody><tr>
   <td class="tk">TJX</td>
-  <td><span class="score" style="--w:62%">62</span></td>
+  <td><span class="score" style="--w:63%">63</span></td>
   <td class="num">128.92</td>
   <td class="num dn">-2.4%</td>
-  <td class="num">1.4x</td>
+  <td class="num">1.5x</td>
   <td class="num">19</td>
   <td class="num">2.3%</td>
   <td class="num">128.92</td>
   <td class="num dn">133.32<span class="sub">-3.4%</span></td>
   <td class="num up">120.13<span class="sub">+6.8%</span></td>
   <td class="num">22</td>
-  <td class="earn muted">งบอีก 71 วัน</td>
-  <td class="ext muted">+0.2%
-    <span class="sub">หลังตลาดปิด</span></td>
+  <td class="earn muted">งบอีก 70 วัน</td>
+  <td class="ext muted">-0.3%
+    <span class="sub">ก่อนเปิดตลาด</span></td>
 </tr>
 <tr>
   <td class="tk">MAR</td>
-  <td><span class="score" style="--w:37%">37</span></td>
+  <td><span class="score" style="--w:38%">38</span></td>
   <td class="num">328.79</td>
   <td class="num dn">-2.3%</td>
   <td class="num">1.5x</td>
@@ -444,9 +444,9 @@ footer { color:var(--muted); font-size:12px; margin-top:28px; line-height:1.75 }
   <td class="num dn">339.97<span class="sub">-3.4%</span></td>
   <td class="num up">306.44<span class="sub">+6.8%</span></td>
   <td class="num">8</td>
-  <td class="earn muted">งบอีก 56 วัน</td>
-  <td class="ext muted">+0.4%
-    <span class="sub">หลังตลาดปิด</span></td>
+  <td class="earn muted">งบอีก 55 วัน</td>
+  <td class="ext muted">-0.2%
+    <span class="sub">ก่อนเปิดตลาด</span></td>
 </tr></tbody>
   </table></div>
 </section>
@@ -460,51 +460,51 @@ footer { color:var(--muted); font-size:12px; margin-top:28px; line-height:1.75 }
     </tr></thead>
     <tbody><tr>
   <td class="tk">SYK</td>
-  <td><span class="score" style="--w:62%">62</span></td>
+  <td><span class="score" style="--w:63%">63</span></td>
   <td class="num">276.43</td>
   <td class="num dn">-8.8%</td>
-  <td class="num">2.7x</td>
+  <td class="num">2.8x</td>
   <td class="num">25</td>
   <td class="num">4.0%</td>
   <td class="num">276.43</td>
   <td class="num dn">293.16<span class="sub">-6.1%</span></td>
   <td class="num up">242.97<span class="sub">+12.1%</span></td>
   <td class="num">5</td>
-  <td class="earn muted">งบอีก 51 วัน</td>
-  <td class="ext muted">+0.5%
-    <span class="sub">หลังตลาดปิด</span></td>
+  <td class="earn muted">งบอีก 50 วัน</td>
+  <td class="ext muted">+0.2%
+    <span class="sub">ก่อนเปิดตลาด</span></td>
 </tr>
 <tr>
   <td class="tk">AMGN</td>
-  <td><span class="score" style="--w:61%">61</span></td>
+  <td><span class="score" style="--w:62%">62</span></td>
   <td class="num">393.17</td>
   <td class="num dn">-10.1%</td>
-  <td class="num">2.9x</td>
+  <td class="num">3.1x</td>
   <td class="num">37</td>
   <td class="num">3.1%</td>
   <td class="num">393.17</td>
   <td class="num dn">411.42<span class="sub">-4.6%</span></td>
   <td class="num up">356.66<span class="sub">+9.3%</span></td>
   <td class="num">5</td>
-  <td class="earn muted">งบอีก 56 วัน</td>
-  <td class="ext muted">+0.1%
-    <span class="sub">หลังตลาดปิด</span></td>
+  <td class="earn muted">งบอีก 55 วัน</td>
+  <td class="ext muted">+0.0%
+    <span class="sub">ก่อนเปิดตลาด</span></td>
 </tr>
 <tr>
   <td class="tk">BKNG</td>
-  <td><span class="score" style="--w:57%">57</span></td>
+  <td><span class="score" style="--w:58%">58</span></td>
   <td class="num">180.30</td>
   <td class="num dn">-6.7%</td>
-  <td class="num">2.2x</td>
+  <td class="num">2.3x</td>
   <td class="num">33</td>
   <td class="num">3.8%</td>
   <td class="num">180.30</td>
   <td class="num dn">190.67<span class="sub">-5.8%</span></td>
   <td class="num up">159.56<span class="sub">+11.5%</span></td>
   <td class="num">9</td>
-  <td class="earn muted">งบอีก 49 วัน</td>
-  <td class="ext muted">+0.6%
-    <span class="sub">หลังตลาดปิด</span></td>
+  <td class="earn muted">งบอีก 48 วัน</td>
+  <td class="ext muted">-2.1%
+    <span class="sub">ก่อนเปิดตลาด</span></td>
 </tr>
 <tr>
   <td class="tk">SHOP</td>
@@ -518,9 +518,9 @@ footer { color:var(--muted); font-size:12px; margin-top:28px; line-height:1.75 }
   <td class="num dn">143.50<span class="sub">-7.0%</span></td>
   <td class="num up">115.29<span class="sub">+14.0%</span></td>
   <td class="num">10</td>
-  <td class="earn muted">งบอีก 56 วัน</td>
-  <td class="ext muted">-0.0%
-    <span class="sub">หลังตลาดปิด</span></td>
+  <td class="earn muted">งบอีก 55 วัน</td>
+  <td class="ext muted">+2.4%
+    <span class="sub">ก่อนเปิดตลาด</span></td>
 </tr></tbody>
   </table></div>
 </section>
@@ -544,25 +544,25 @@ footer { color:var(--muted); font-size:12px; margin-top:28px; line-height:1.75 }
   <td class="num dn">48.21<span class="sub">-7.6%</span></td>
   <td class="num up">38.05<span class="sub">+15.1%</span></td>
   <td class="num">29</td>
-  <td class="earn muted">งบอีก 51 วัน</td>
-  <td class="ext muted">-0.2%
-    <span class="sub">หลังตลาดปิด</span></td>
+  <td class="earn muted">งบอีก 50 วัน</td>
+  <td class="ext muted">-0.1%
+    <span class="sub">ก่อนเปิดตลาด</span></td>
 </tr>
 <tr>
   <td class="tk">META</td>
   <td><span class="score" style="--w:18%">18</span></td>
   <td class="num">613.48</td>
   <td class="num dn">-0.5%</td>
-  <td class="num">1.1x</td>
+  <td class="num">1.2x</td>
   <td class="num">61</td>
   <td class="num">3.2%</td>
   <td class="num">613.48</td>
   <td class="num dn">643.08<span class="sub">-4.8%</span></td>
   <td class="num up">554.28<span class="sub">+9.6%</span></td>
   <td class="num">3</td>
-  <td class="earn muted">งบอีก 50 วัน</td>
-  <td class="ext muted">+0.1%
-    <span class="sub">หลังตลาดปิด</span></td>
+  <td class="earn muted">งบอีก 49 วัน</td>
+  <td class="ext bad">+5.0% สวนทาง
+    <span class="sub">ก่อนเปิดตลาด</span></td>
 </tr></tbody>
   </table></div>
 </section>
