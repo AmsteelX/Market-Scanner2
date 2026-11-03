@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="th"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Market Scanner — 2026-11-02</title>
+<title>Market Scanner — 2026-11-03</title>
 <style>
 :root {
   --bg:#f6f7f9; --panel:#fff; --ink:#16191d; --muted:#6b7280; --line:#e5e7eb;
@@ -53,8 +53,8 @@ footer { color:var(--muted); font-size:12px; margin-top:28px; line-height:1.75 }
 
 <header>
   <h1>Market Signal Scanner</h1>
-  <div class="sub">หุ้นสหรัฐ · ข้อมูลปิดวันที่ 2026-11-02 ·
-    สแกน 245 ตัว ผ่านตัวกรองสภาพคล่อง 235 ตัว<br>รอบนอกเวลาซื้อขาย · ใช้ราคาล่าสุดที่มี</div>
+  <div class="sub">หุ้นสหรัฐ · ข้อมูลปิดวันที่ 2026-11-03 ·
+    สแกน 245 ตัว ผ่านตัวกรองสภาพคล่อง 235 ตัว<br>รอบระหว่างเวลาทำการ · ราคานอกเวลาคือราคาสด</div>
 </header>
 
 <section class="card">
@@ -62,18 +62,40 @@ footer { color:var(--muted); font-size:12px; margin-top:28px; line-height:1.75 }
   <div class="stats">
     <div class="stat"><span>เทรนด์ SPY</span><b class="warn">ขาขึ้นแต่ย่อ (ใต้ EMA50)</b></div>
     <div class="stat"><span>ตลาดเอื้อฝั่ง</span><b class="warn">ทั้งสองฝั่ง (ระวัง)</b></div>
-    <div class="stat"><span>หุ้นเหนือ EMA50</span><b>62%</b></div>
-    <div class="stat"><span>หุ้นเหนือ SMA200</span><b>62%</b></div>
-    <div class="stat"><span>สัญญาณทั้งหมด</span><b>28</b></div>
+    <div class="stat"><span>หุ้นเหนือ EMA50</span><b>60%</b></div>
+    <div class="stat"><span>หุ้นเหนือ SMA200</span><b>60%</b></div>
+    <div class="stat"><span>สัญญาณทั้งหมด</span><b>19</b></div>
   </div>
   <div class="note warn">ตลาดก้ำกึ่ง — ทั้งสองฝั่งมีสัญญาณหลอกเยอะ เลือกเฉพาะคะแนนสูงและลดขนาดไม้ลง</div>
-  <div class="note muted">ตัวกรองวันประกาศงบ: ตัดหุ้นที่จะประกาศงบภายใน 5 วันออกแล้ว (9 สัญญาณ)</div>
+  <div class="note muted">ตัวกรองวันประกาศงบ: ตัดหุ้นที่จะประกาศงบภายใน 5 วันออกแล้ว (7 สัญญาณ)</div>
   <div class="note muted">ราคานอกเวลาทำการ: ไม่มีตัวไหนขยับเกิน 3% — แผนเทรดในตารางยังใช้ได้</div>
 </section>
 
-<h3 class="side up">▲ ฝั่งซื้อ (Long) <span class="count">14 สัญญาณ</span></h3>
+<h3 class="side up">▲ ฝั่งซื้อ (Long) <span class="count">6 สัญญาณ</span></h3>
 <section class="card">
-  <h2>A · Breakout — ทะลุแนวต้าน 20 วัน <span class="count">5 ตัว</span></h2>
+  <h2>A · Breakout — ทะลุแนวต้าน 20 วัน <span class="count">0 ตัว</span></h2>
+  <div class="scroll"><table>
+    <thead><tr>
+      <th>หุ้น</th><th>คะแนน</th><th>ราคา</th><th>1 วัน</th><th>RVOL</th><th>RSI</th>
+      <th>ATR%</th><th>จุดเข้า</th><th>ตัดขาดทุน</th><th>เป้าหมาย</th><th>จำนวนหุ้น</th>
+      <th>งบ</th><th>นอกเวลา</th>
+    </tr></thead>
+    <tbody><tr><td colspan="13" class="empty">ไม่มีหุ้นเข้าเงื่อนไขนี้วันนี้</td></tr></tbody>
+  </table></div>
+</section>
+<section class="card">
+  <h2>B · Volume Spike — วอลุ่มพุ่ง ปิดแข็ง <span class="count">0 ตัว</span></h2>
+  <div class="scroll"><table>
+    <thead><tr>
+      <th>หุ้น</th><th>คะแนน</th><th>ราคา</th><th>1 วัน</th><th>RVOL</th><th>RSI</th>
+      <th>ATR%</th><th>จุดเข้า</th><th>ตัดขาดทุน</th><th>เป้าหมาย</th><th>จำนวนหุ้น</th>
+      <th>งบ</th><th>นอกเวลา</th>
+    </tr></thead>
+    <tbody><tr><td colspan="13" class="empty">ไม่มีหุ้นเข้าเงื่อนไขนี้วันนี้</td></tr></tbody>
+  </table></div>
+</section>
+<section class="card">
+  <h2>C · Pullback — ย่อในขาขึ้น (mean reversion) <span class="count">6 ตัว</span></h2>
   <div class="scroll"><table>
     <thead><tr>
       <th>หุ้น</th><th>คะแนน</th><th>ราคา</th><th>1 วัน</th><th>RVOL</th><th>RSI</th>
@@ -81,251 +103,103 @@ footer { color:var(--muted); font-size:12px; margin-top:28px; line-height:1.75 }
       <th>งบ</th><th>นอกเวลา</th>
     </tr></thead>
     <tbody><tr>
-  <td class="tk">WMT</td>
-  <td><span class="score" style="--w:72%">72</span></td>
-  <td class="num">127.69</td>
-  <td class="num up">+3.4%</td>
-  <td class="num">1.4x</td>
-  <td class="num">78</td>
-  <td class="num">2.0%</td>
-  <td class="num">127.69</td>
-  <td class="num dn">123.84<span class="sub">-3.0%</span></td>
-  <td class="num up">135.39<span class="sub">+6.0%</span></td>
-  <td class="num">25</td>
-  <td class="earn muted">งบอีก 16 วัน</td>
-  <td class="ext muted">+0.2%
-    <span class="sub">หลังตลาดปิด</span></td>
-</tr>
-<tr>
-  <td class="tk">XLP</td>
-  <td><span class="score" style="--w:69%">69</span></td>
-  <td class="num">90.83</td>
-  <td class="num up">+1.6%</td>
-  <td class="num">1.7x</td>
-  <td class="num">69</td>
-  <td class="num">1.5%</td>
-  <td class="num">90.83</td>
-  <td class="num dn">88.85<span class="sub">-2.2%</span></td>
-  <td class="num up">94.79<span class="sub">+4.4%</span></td>
-  <td class="num">50</td>
-  <td class="earn muted">ไม่ทราบวันงบ</td>
-  <td class="ext muted">+0.2%
-    <span class="sub">หลังตลาดปิด</span></td>
-</tr>
-<tr>
-  <td class="tk">COST</td>
-  <td><span class="score" style="--w:66%">66</span></td>
-  <td class="num">1,040.55</td>
-  <td class="num up">+2.8%</td>
-  <td class="num">1.4x</td>
-  <td class="num">73</td>
-  <td class="num">1.7%</td>
-  <td class="num">1,040.55</td>
-  <td class="num dn">1,014.50<span class="sub">-2.5%</span></td>
-  <td class="num up">1,092.64<span class="sub">+5.0%</span></td>
-  <td class="num">3</td>
-  <td class="earn muted">งบอีก 37 วัน</td>
-  <td class="ext muted">-0.0%
-    <span class="sub">หลังตลาดปิด</span></td>
-</tr>
-<tr>
-  <td class="tk">UNP</td>
-  <td><span class="score" style="--w:63%">63</span></td>
-  <td class="num">307.00</td>
-  <td class="num up">+1.0%</td>
-  <td class="num">1.4x</td>
-  <td class="num">72</td>
-  <td class="num">1.8%</td>
-  <td class="num">307.00</td>
-  <td class="num dn">298.66<span class="sub">-2.7%</span></td>
-  <td class="num up">323.68<span class="sub">+5.4%</span></td>
-  <td class="num">11</td>
-  <td class="earn muted">งบอีก 84 วัน</td>
+  <td class="tk">AAPL</td>
+  <td><span class="score" style="--w:52%">52</span></td>
+  <td class="num">331.27</td>
+  <td class="num dn">-2.1%</td>
+  <td class="num">1.0x</td>
+  <td class="num">41</td>
+  <td class="num">2.2%</td>
+  <td class="num">331.27</td>
+  <td class="num dn">320.10<span class="sub">-3.4%</span></td>
+  <td class="num up">353.60<span class="sub">+6.7%</span></td>
+  <td class="num">8</td>
+  <td class="earn warn">เพิ่งประกาศงบ (02 Nov)</td>
   <td class="ext muted">+0.0%
-    <span class="sub">หลังตลาดปิด</span></td>
-</tr>
-<tr>
-  <td class="tk">KO</td>
-  <td><span class="score" style="--w:58%">58</span></td>
-  <td class="num">95.83</td>
-  <td class="num up">+1.9%</td>
-  <td class="num">1.4x</td>
-  <td class="num">67</td>
-  <td class="num">1.7%</td>
-  <td class="num">95.83</td>
-  <td class="num dn">93.33<span class="sub">-2.6%</span></td>
-  <td class="num up">100.83<span class="sub">+5.2%</span></td>
-  <td class="num">40</td>
-  <td class="earn muted">งบอีก 98 วัน</td>
-  <td class="ext muted">+0.1%
-    <span class="sub">หลังตลาดปิด</span></td>
-</tr></tbody>
-  </table></div>
-</section>
-<section class="card">
-  <h2>B · Volume Spike — วอลุ่มพุ่ง ปิดแข็ง <span class="count">2 ตัว</span></h2>
-  <div class="scroll"><table>
-    <thead><tr>
-      <th>หุ้น</th><th>คะแนน</th><th>ราคา</th><th>1 วัน</th><th>RVOL</th><th>RSI</th>
-      <th>ATR%</th><th>จุดเข้า</th><th>ตัดขาดทุน</th><th>เป้าหมาย</th><th>จำนวนหุ้น</th>
-      <th>งบ</th><th>นอกเวลา</th>
-    </tr></thead>
-    <tbody><tr>
-  <td class="tk">TEM</td>
-  <td><span class="score" style="--w:56%">56</span></td>
-  <td class="num">78.48</td>
-  <td class="num up">+8.7%</td>
-  <td class="num">2.6x</td>
-  <td class="num">59</td>
-  <td class="num">7.7%</td>
-  <td class="num">78.48</td>
-  <td class="num dn">69.43<span class="sub">-11.5%</span></td>
-  <td class="num up">96.58<span class="sub">+23.1%</span></td>
-  <td class="num">11</td>
-  <td class="earn muted">งบอีก -1 วัน</td>
-  <td class="ext muted">-0.7%
-    <span class="sub">หลังตลาดปิด</span></td>
-</tr>
-<tr>
-  <td class="tk">REGN</td>
-  <td><span class="score" style="--w:49%">49</span></td>
-  <td class="num">961.26</td>
-  <td class="num up">+3.6%</td>
-  <td class="num">2.2x</td>
-  <td class="num">82</td>
-  <td class="num">3.0%</td>
-  <td class="num">961.26</td>
-  <td class="num dn">918.48<span class="sub">-4.5%</span></td>
-  <td class="num up">1,046.81<span class="sub">+8.9%</span></td>
-  <td class="num">2</td>
-  <td class="earn muted">งบอีก 86 วัน</td>
-  <td class="ext muted">+0.8%
-    <span class="sub">หลังตลาดปิด</span></td>
-</tr></tbody>
-  </table></div>
-</section>
-<section class="card">
-  <h2>C · Pullback — ย่อในขาขึ้น (mean reversion) <span class="count">7 ตัว</span></h2>
-  <div class="scroll"><table>
-    <thead><tr>
-      <th>หุ้น</th><th>คะแนน</th><th>ราคา</th><th>1 วัน</th><th>RVOL</th><th>RSI</th>
-      <th>ATR%</th><th>จุดเข้า</th><th>ตัดขาดทุน</th><th>เป้าหมาย</th><th>จำนวนหุ้น</th>
-      <th>งบ</th><th>นอกเวลา</th>
-    </tr></thead>
-    <tbody><tr>
-  <td class="tk">MSFT</td>
-  <td><span class="score" style="--w:55%">55</span></td>
-  <td class="num">507.12</td>
-  <td class="num dn">-2.8%</td>
-  <td class="num">1.6x</td>
-  <td class="num">40</td>
-  <td class="num">2.5%</td>
-  <td class="num">507.12</td>
-  <td class="num dn">487.93<span class="sub">-3.8%</span></td>
-  <td class="num up">545.50<span class="sub">+7.6%</span></td>
-  <td class="num">5</td>
-  <td class="earn muted">งบอีก 85 วัน</td>
-  <td class="ext muted">+0.2%
-    <span class="sub">หลังตลาดปิด</span></td>
+    <span class="sub">ในเวลาทำการ</span></td>
 </tr>
 <tr>
   <td class="tk">PLTR</td>
-  <td><span class="score" style="--w:51%">51</span></td>
-  <td class="num">178.34</td>
-  <td class="num dn">-3.1%</td>
-  <td class="num">1.6x</td>
-  <td class="num">38</td>
-  <td class="num">4.7%</td>
-  <td class="num">178.34</td>
-  <td class="num dn">165.79<span class="sub">-7.0%</span></td>
-  <td class="num up">203.43<span class="sub">+14.1%</span></td>
-  <td class="num">7</td>
+  <td><span class="score" style="--w:47%">47</span></td>
+  <td class="num">175.27</td>
+  <td class="num dn">-1.7%</td>
+  <td class="num">1.7x</td>
+  <td class="num">36</td>
+  <td class="num">5.0%</td>
+  <td class="num">175.27</td>
+  <td class="num dn">160.90<span class="sub">-8.2%</span></td>
+  <td class="num up">201.37<span class="sub">+14.9%</span></td>
+  <td class="num">6</td>
   <td class="earn warn">เพิ่งประกาศงบ (02 Nov)</td>
-  <td class="ext muted">-3.0%
-    <span class="sub">หลังตลาดปิด</span></td>
+  <td class="ext muted">+0.0%
+    <span class="sub">ในเวลาทำการ</span></td>
 </tr>
 <tr>
-  <td class="tk">XLK</td>
-  <td><span class="score" style="--w:39%">39</span></td>
-  <td class="num">174.22</td>
-  <td class="num dn">-2.9%</td>
-  <td class="num">1.7x</td>
-  <td class="num">32</td>
-  <td class="num">2.6%</td>
-  <td class="num">174.22</td>
-  <td class="num dn">167.49<span class="sub">-3.9%</span></td>
-  <td class="num up">187.68<span class="sub">+7.7%</span></td>
-  <td class="num">14</td>
-  <td class="earn muted">ไม่ทราบวันงบ</td>
-  <td class="ext muted">+0.1%
-    <span class="sub">หลังตลาดปิด</span></td>
+  <td class="tk">CRM</td>
+  <td><span class="score" style="--w:29%">29</span></td>
+  <td class="num">222.81</td>
+  <td class="num dn">-1.5%</td>
+  <td class="num">0.5x</td>
+  <td class="num">38</td>
+  <td class="num">4.1%</td>
+  <td class="num">222.81</td>
+  <td class="num dn">209.18<span class="sub">-6.1%</span></td>
+  <td class="num up">250.08<span class="sub">+12.2%</span></td>
+  <td class="num">7</td>
+  <td class="earn muted">งบอีก 29 วัน</td>
+  <td class="ext muted">+0.0%
+    <span class="sub">ในเวลาทำการ</span></td>
 </tr>
 <tr>
   <td class="tk">QQQ</td>
-  <td><span class="score" style="--w:38%">38</span></td>
-  <td class="num">681.09</td>
-  <td class="num dn">-1.4%</td>
-  <td class="num">1.4x</td>
-  <td class="num">32</td>
+  <td><span class="score" style="--w:27%">27</span></td>
+  <td class="num">685.05</td>
+  <td class="num up">+0.6%</td>
+  <td class="num">0.6x</td>
+  <td class="num">34</td>
   <td class="num">1.9%</td>
-  <td class="num">681.09</td>
-  <td class="num dn">661.34<span class="sub">-2.9%</span></td>
-  <td class="num up">720.60<span class="sub">+5.8%</span></td>
+  <td class="num">685.05</td>
+  <td class="num dn">665.89<span class="sub">-2.8%</span></td>
+  <td class="num up">723.37<span class="sub">+5.6%</span></td>
   <td class="num">5</td>
   <td class="earn muted">ไม่ทราบวันงบ</td>
-  <td class="ext muted">+0.2%
-    <span class="sub">หลังตลาดปิด</span></td>
+  <td class="ext muted">+0.0%
+    <span class="sub">ในเวลาทำการ</span></td>
+</tr>
+<tr>
+  <td class="tk">XLK</td>
+  <td><span class="score" style="--w:26%">26</span></td>
+  <td class="num">176.16</td>
+  <td class="num up">+1.1%</td>
+  <td class="num">0.7x</td>
+  <td class="num">35</td>
+  <td class="num">2.5%</td>
+  <td class="num">176.16</td>
+  <td class="num dn">169.56<span class="sub">-3.7%</span></td>
+  <td class="num up">189.35<span class="sub">+7.5%</span></td>
+  <td class="num">15</td>
+  <td class="earn muted">ไม่ทราบวันงบ</td>
+  <td class="ext muted">+0.0%
+    <span class="sub">ในเวลาทำการ</span></td>
 </tr>
 <tr>
   <td class="tk">OKTA</td>
-  <td><span class="score" style="--w:29%">29</span></td>
-  <td class="num">184.87</td>
-  <td class="num dn">-11.2%</td>
-  <td class="num">1.8x</td>
+  <td><span class="score" style="--w:24%">24</span></td>
+  <td class="num">185.36</td>
+  <td class="num up">+0.3%</td>
+  <td class="num">0.8x</td>
   <td class="num">40</td>
-  <td class="num">7.1%</td>
-  <td class="num">184.87</td>
-  <td class="num dn">165.05<span class="sub">-10.7%</span></td>
-  <td class="num up">224.50<span class="sub">+21.4%</span></td>
+  <td class="num">7.0%</td>
+  <td class="num">185.36</td>
+  <td class="num dn">165.84<span class="sub">-10.5%</span></td>
+  <td class="num up">224.40<span class="sub">+21.1%</span></td>
   <td class="num">5</td>
   <td class="earn muted">งบอีก 28 วัน</td>
-  <td class="ext muted">-0.0%
-    <span class="sub">หลังตลาดปิด</span></td>
-</tr>
-<tr>
-  <td class="tk">ARKK</td>
-  <td><span class="score" style="--w:23%">23</span></td>
-  <td class="num">78.96</td>
-  <td class="num dn">-2.2%</td>
-  <td class="num">2.0x</td>
-  <td class="num">38</td>
-  <td class="num">3.7%</td>
-  <td class="num">78.96</td>
-  <td class="num dn">74.60<span class="sub">-5.5%</span></td>
-  <td class="num up">87.68<span class="sub">+11.0%</span></td>
-  <td class="num">22</td>
-  <td class="earn muted">ไม่ทราบวันงบ</td>
   <td class="ext muted">+0.0%
-    <span class="sub">หลังตลาดปิด</span></td>
-</tr>
-<tr>
-  <td class="tk">CSCO</td>
-  <td><span class="score" style="--w:18%">18</span></td>
-  <td class="num">101.61</td>
-  <td class="num dn">-2.8%</td>
-  <td class="num">1.6x</td>
-  <td class="num">35</td>
-  <td class="num">3.1%</td>
-  <td class="num">101.61</td>
-  <td class="num dn">96.83<span class="sub">-4.7%</span></td>
-  <td class="num up">111.16<span class="sub">+9.4%</span></td>
-  <td class="num">20</td>
-  <td class="earn muted">งบอีก 9 วัน</td>
-  <td class="ext muted">+0.4%
-    <span class="sub">หลังตลาดปิด</span></td>
+    <span class="sub">ในเวลาทำการ</span></td>
 </tr></tbody>
   </table></div>
-</section><h3 class="side dn">▼ ฝั่งขายชอร์ต (Short) <span class="count">14 สัญญาณ</span></h3>
+</section><h3 class="side dn">▼ ฝั่งขายชอร์ต (Short) <span class="count">13 สัญญาณ</span></h3>
 <section class="card">
   <h2>D · Breakdown — หลุดแนวรับ 20 วัน <span class="count">0 ตัว</span></h2>
   <div class="scroll"><table>
@@ -349,7 +223,7 @@ footer { color:var(--muted); font-size:12px; margin-top:28px; line-height:1.75 }
   </table></div>
 </section>
 <section class="card">
-  <h2>F · Rally Fade — เด้งจนซื้อมากเกินในขาลง <span class="count">14 ตัว</span></h2>
+  <h2>F · Rally Fade — เด้งจนซื้อมากเกินในขาลง <span class="count">13 ตัว</span></h2>
   <div class="scroll"><table>
     <thead><tr>
       <th>หุ้น</th><th>คะแนน</th><th>ราคา</th><th>1 วัน</th><th>RVOL</th><th>RSI</th>
@@ -357,228 +231,212 @@ footer { color:var(--muted); font-size:12px; margin-top:28px; line-height:1.75 }
       <th>งบ</th><th>นอกเวลา</th>
     </tr></thead>
     <tbody><tr>
-  <td class="tk">LOW</td>
-  <td><span class="score" style="--w:52%">52</span></td>
-  <td class="num">218.15</td>
-  <td class="num up">+4.3%</td>
-  <td class="num">1.2x</td>
-  <td class="num">73</td>
-  <td class="num">2.4%</td>
-  <td class="num">218.15</td>
-  <td class="num dn">226.06<span class="sub">-3.6%</span></td>
-  <td class="num up">202.33<span class="sub">+7.3%</span></td>
-  <td class="num">12</td>
-  <td class="earn muted">งบอีก 15 วัน</td>
-  <td class="ext muted">+0.0%
-    <span class="sub">หลังตลาดปิด</span></td>
-</tr>
-<tr>
-  <td class="tk">CMCSA</td>
-  <td><span class="score" style="--w:48%">48</span></td>
-  <td class="num">23.87</td>
+  <td class="tk">FSLR</td>
+  <td><span class="score" style="--w:44%">44</span></td>
+  <td class="num">187.16</td>
   <td class="num up">+2.8%</td>
-  <td class="num">1.1x</td>
-  <td class="num">64</td>
-  <td class="num">2.9%</td>
-  <td class="num">23.87</td>
-  <td class="num dn">24.92<span class="sub">-4.4%</span></td>
-  <td class="num up">21.78<span class="sub">+8.8%</span></td>
-  <td class="num">95</td>
-  <td class="earn muted">งบอีก 86 วัน</td>
-  <td class="ext muted">-0.2%
-    <span class="sub">หลังตลาดปิด</span></td>
+  <td class="num">0.9x</td>
+  <td class="num">57</td>
+  <td class="num">4.1%</td>
+  <td class="num">187.16</td>
+  <td class="num dn">198.59<span class="sub">-6.1%</span></td>
+  <td class="num up">164.31<span class="sub">+12.2%</span></td>
+  <td class="num">8</td>
+  <td class="earn muted">งบอีก 112 วัน</td>
+  <td class="ext muted">-0.0%
+    <span class="sub">ในเวลาทำการ</span></td>
 </tr>
 <tr>
   <td class="tk">TDG</td>
-  <td><span class="score" style="--w:46%">46</span></td>
-  <td class="num">1,213.62</td>
-  <td class="num up">+5.8%</td>
-  <td class="num">1.3x</td>
-  <td class="num">66</td>
+  <td><span class="score" style="--w:41%">41</span></td>
+  <td class="num">1,207.24</td>
+  <td class="num dn">-0.5%</td>
+  <td class="num">0.6x</td>
+  <td class="num">64</td>
   <td class="num">2.6%</td>
-  <td class="num">1,213.62</td>
-  <td class="num dn">1,261.14<span class="sub">-3.9%</span></td>
-  <td class="num up">1,118.57<span class="sub">+7.8%</span></td>
+  <td class="num">1,207.24</td>
+  <td class="num dn">1,253.93<span class="sub">-3.9%</span></td>
+  <td class="num up">1,113.87<span class="sub">+7.7%</span></td>
   <td class="num">2</td>
   <td class="earn muted">งบอีก 7 วัน</td>
   <td class="ext muted">+0.0%
-    <span class="sub">หลังตลาดปิด</span></td>
+    <span class="sub">ในเวลาทำการ</span></td>
+</tr>
+<tr>
+  <td class="tk">XLI</td>
+  <td><span class="score" style="--w:36%">36</span></td>
+  <td class="num">171.55</td>
+  <td class="num up">+1.1%</td>
+  <td class="num">0.9x</td>
+  <td class="num">57</td>
+  <td class="num">1.6%</td>
+  <td class="num">171.55</td>
+  <td class="num dn">175.56<span class="sub">-2.3%</span></td>
+  <td class="num up">163.52<span class="sub">+4.7%</span></td>
+  <td class="num">24</td>
+  <td class="earn muted">ไม่ทราบวันงบ</td>
+  <td class="ext muted">+0.0%
+    <span class="sub">ในเวลาทำการ</span></td>
+</tr>
+<tr>
+  <td class="tk">CMCSA</td>
+  <td><span class="score" style="--w:32%">32</span></td>
+  <td class="num">23.65</td>
+  <td class="num dn">-0.9%</td>
+  <td class="num">0.4x</td>
+  <td class="num">61</td>
+  <td class="num">2.9%</td>
+  <td class="num">23.65</td>
+  <td class="num dn">24.69<span class="sub">-4.4%</span></td>
+  <td class="num up">21.58<span class="sub">+8.7%</span></td>
+  <td class="num">96</td>
+  <td class="earn muted">งบอีก 86 วัน</td>
+  <td class="ext muted">+0.0%
+    <span class="sub">ในเวลาทำการ</span></td>
 </tr>
 <tr>
   <td class="tk">NEE</td>
-  <td><span class="score" style="--w:45%">45</span></td>
-  <td class="num">85.03</td>
-  <td class="num up">+1.6%</td>
-  <td class="num">1.2x</td>
-  <td class="num">69</td>
+  <td><span class="score" style="--w:31%">31</span></td>
+  <td class="num">84.55</td>
+  <td class="num dn">-0.6%</td>
+  <td class="num">0.5x</td>
+  <td class="num">66</td>
   <td class="num">1.9%</td>
-  <td class="num">85.03</td>
-  <td class="num dn">87.42<span class="sub">-2.8%</span></td>
-  <td class="num up">80.26<span class="sub">+5.6%</span></td>
-  <td class="num">41</td>
+  <td class="num">84.55</td>
+  <td class="num dn">86.90<span class="sub">-2.8%</span></td>
+  <td class="num up">79.85<span class="sub">+5.6%</span></td>
+  <td class="num">42</td>
   <td class="earn muted">งบอีก 85 วัน</td>
-  <td class="ext muted">+0.2%
-    <span class="sub">หลังตลาดปิด</span></td>
+  <td class="ext muted">+0.0%
+    <span class="sub">ในเวลาทำการ</span></td>
 </tr>
 <tr>
   <td class="tk">XLU</td>
-  <td><span class="score" style="--w:38%">38</span></td>
-  <td class="num">43.67</td>
-  <td class="num up">+0.6%</td>
-  <td class="num">1.1x</td>
-  <td class="num">67</td>
-  <td class="num">1.4%</td>
-  <td class="num">43.67</td>
-  <td class="num dn">44.58<span class="sub">-2.1%</span></td>
-  <td class="num up">41.86<span class="sub">+4.2%</span></td>
-  <td class="num">110</td>
-  <td class="earn muted">ไม่ทราบวันงบ</td>
-  <td class="ext muted">+0.1%
-    <span class="sub">หลังตลาดปิด</span></td>
-</tr>
-<tr>
-  <td class="tk">PEP</td>
-  <td><span class="score" style="--w:35%">35</span></td>
-  <td class="num">140.42</td>
-  <td class="num up">+2.2%</td>
-  <td class="num">0.9x</td>
+  <td><span class="score" style="--w:28%">28</span></td>
+  <td class="num">43.58</td>
+  <td class="num dn">-0.2%</td>
+  <td class="num">0.5x</td>
   <td class="num">66</td>
-  <td class="num">2.1%</td>
-  <td class="num">140.42</td>
-  <td class="num dn">144.82<span class="sub">-3.1%</span></td>
-  <td class="num up">131.62<span class="sub">+6.3%</span></td>
-  <td class="num">22</td>
-  <td class="earn muted">งบอีก 91 วัน</td>
-  <td class="ext muted">+0.2%
-    <span class="sub">หลังตลาดปิด</span></td>
-</tr>
-<tr>
-  <td class="tk">DPZ</td>
-  <td><span class="score" style="--w:33%">33</span></td>
-  <td class="num">322.35</td>
-  <td class="num up">+2.8%</td>
-  <td class="num">0.9x</td>
-  <td class="num">60</td>
-  <td class="num">2.8%</td>
-  <td class="num">322.35</td>
-  <td class="num dn">335.68<span class="sub">-4.1%</span></td>
-  <td class="num up">295.69<span class="sub">+8.3%</span></td>
-  <td class="num">7</td>
-  <td class="earn muted">งบอีก 111 วัน</td>
-  <td class="ext muted">-0.2%
-    <span class="sub">หลังตลาดปิด</span></td>
-</tr>
-<tr>
-  <td class="tk">NKE</td>
-  <td><span class="score" style="--w:32%">32</span></td>
-  <td class="num">39.12</td>
-  <td class="num up">+1.2%</td>
-  <td class="num">0.8x</td>
-  <td class="num">64</td>
-  <td class="num">2.7%</td>
-  <td class="num">39.12</td>
-  <td class="num dn">40.69<span class="sub">-4.0%</span></td>
-  <td class="num up">35.98<span class="sub">+8.0%</span></td>
-  <td class="num">63</td>
-  <td class="earn muted">งบอีก 44 วัน</td>
+  <td class="num">1.4%</td>
+  <td class="num">43.58</td>
+  <td class="num dn">44.47<span class="sub">-2.0%</span></td>
+  <td class="num up">41.81<span class="sub">+4.1%</span></td>
+  <td class="num">112</td>
+  <td class="earn muted">ไม่ทราบวันงบ</td>
   <td class="ext muted">+0.0%
-    <span class="sub">หลังตลาดปิด</span></td>
+    <span class="sub">ในเวลาทำการ</span></td>
 </tr>
 <tr>
-  <td class="tk">F</td>
-  <td><span class="score" style="--w:31%">31</span></td>
-  <td class="num">12.60</td>
-  <td class="num up">+2.9%</td>
-  <td class="num">1.3x</td>
-  <td class="num">56</td>
-  <td class="num">2.7%</td>
-  <td class="num">12.60</td>
-  <td class="num dn">13.12<span class="sub">-4.1%</span></td>
-  <td class="num up">11.57<span class="sub">+8.2%</span></td>
-  <td class="num">194</td>
-  <td class="earn muted">งบอีก 99 วัน</td>
+  <td class="tk">LOW</td>
+  <td><span class="score" style="--w:28%">28</span></td>
+  <td class="num">213.07</td>
+  <td class="num dn">-2.3%</td>
+  <td class="num">0.4x</td>
+  <td class="num">65</td>
+  <td class="num">2.5%</td>
+  <td class="num">213.07</td>
+  <td class="num dn">221.01<span class="sub">-3.7%</span></td>
+  <td class="num up">197.20<span class="sub">+7.5%</span></td>
+  <td class="num">12</td>
+  <td class="earn muted">งบอีก 15 วัน</td>
   <td class="ext muted">+0.0%
-    <span class="sub">หลังตลาดปิด</span></td>
+    <span class="sub">ในเวลาทำการ</span></td>
 </tr>
 <tr>
   <td class="tk">HON</td>
-  <td><span class="score" style="--w:29%">29</span></td>
-  <td class="num">223.77</td>
-  <td class="num up">+2.5%</td>
-  <td class="num">0.7x</td>
-  <td class="num">64</td>
-  <td class="num">2.4%</td>
-  <td class="num">223.77</td>
-  <td class="num dn">231.85<span class="sub">-3.6%</span></td>
-  <td class="num up">207.61<span class="sub">+7.2%</span></td>
+  <td><span class="score" style="--w:25%">25</span></td>
+  <td class="num">224.02</td>
+  <td class="num up">+0.1%</td>
+  <td class="num">0.4x</td>
+  <td class="num">65</td>
+  <td class="num">2.3%</td>
+  <td class="num">224.02</td>
+  <td class="num dn">231.88<span class="sub">-3.5%</span></td>
+  <td class="num up">208.32<span class="sub">+7.0%</span></td>
   <td class="num">12</td>
   <td class="earn muted">งบอีก 86 วัน</td>
   <td class="ext muted">+0.0%
-    <span class="sub">หลังตลาดปิด</span></td>
+    <span class="sub">ในเวลาทำการ</span></td>
 </tr>
 <tr>
-  <td class="tk">NCLH</td>
-  <td><span class="score" style="--w:28%">28</span></td>
-  <td class="num">17.94</td>
-  <td class="num up">+2.1%</td>
-  <td class="num">1.2x</td>
-  <td class="num">68</td>
-  <td class="num">4.3%</td>
-  <td class="num">17.94</td>
-  <td class="num dn">19.11<span class="sub">-6.5%</span></td>
-  <td class="num up">15.60<span class="sub">+13.0%</span></td>
-  <td class="num">85</td>
-  <td class="earn muted">งบอีก 118 วัน</td>
-  <td class="ext muted">-0.4%
-    <span class="sub">หลังตลาดปิด</span></td>
+  <td class="tk">DPZ</td>
+  <td><span class="score" style="--w:25%">25</span></td>
+  <td class="num">321.83</td>
+  <td class="num dn">-0.2%</td>
+  <td class="num">0.3x</td>
+  <td class="num">60</td>
+  <td class="num">2.7%</td>
+  <td class="num">321.83</td>
+  <td class="num dn">334.92<span class="sub">-4.1%</span></td>
+  <td class="num up">295.65<span class="sub">+8.1%</span></td>
+  <td class="num">7</td>
+  <td class="earn muted">งบอีก 111 วัน</td>
+  <td class="ext muted">+0.0%
+    <span class="sub">ในเวลาทำการ</span></td>
+</tr>
+<tr>
+  <td class="tk">GE</td>
+  <td><span class="score" style="--w:22%">22</span></td>
+  <td class="num">321.86</td>
+  <td class="num up">+1.9%</td>
+  <td class="num">0.5x</td>
+  <td class="num">59</td>
+  <td class="num">3.0%</td>
+  <td class="num">321.86</td>
+  <td class="num dn">336.47<span class="sub">-4.5%</span></td>
+  <td class="num up">292.64<span class="sub">+9.1%</span></td>
+  <td class="num">6</td>
+  <td class="earn muted">งบอีก 79 วัน</td>
+  <td class="ext muted">+0.0%
+    <span class="sub">ในเวลาทำการ</span></td>
 </tr>
 <tr>
   <td class="tk">CMG</td>
-  <td><span class="score" style="--w:17%">17</span></td>
-  <td class="num">32.91</td>
-  <td class="num up">+3.2%</td>
-  <td class="num">0.8x</td>
-  <td class="num">61</td>
-  <td class="num">3.7%</td>
-  <td class="num">32.91</td>
-  <td class="num dn">34.76<span class="sub">-5.6%</span></td>
-  <td class="num up">29.21<span class="sub">+11.2%</span></td>
-  <td class="num">54</td>
+  <td><span class="score" style="--w:15%">15</span></td>
+  <td class="num">33.12</td>
+  <td class="num up">+0.7%</td>
+  <td class="num">0.4x</td>
+  <td class="num">62</td>
+  <td class="num">3.6%</td>
+  <td class="num">33.12</td>
+  <td class="num dn">34.93<span class="sub">-5.5%</span></td>
+  <td class="num up">29.51<span class="sub">+10.9%</span></td>
+  <td class="num">55</td>
   <td class="earn muted">งบอีก 98 วัน</td>
-  <td class="ext muted">-0.4%
-    <span class="sub">หลังตลาดปิด</span></td>
+  <td class="ext muted">+0.0%
+    <span class="sub">ในเวลาทำการ</span></td>
 </tr>
 <tr>
-  <td class="tk">AAL</td>
-  <td><span class="score" style="--w:13%">13</span></td>
-  <td class="num">13.08</td>
-  <td class="num up">+3.8%</td>
-  <td class="num">1.4x</td>
-  <td class="num">56</td>
-  <td class="num">4.1%</td>
-  <td class="num">13.08</td>
-  <td class="num dn">13.89<span class="sub">-6.2%</span></td>
-  <td class="num up">11.46<span class="sub">+12.4%</span></td>
-  <td class="num">123</td>
-  <td class="earn muted">งบอีก 84 วัน</td>
-  <td class="ext muted">-0.1%
-    <span class="sub">หลังตลาดปิด</span></td>
+  <td class="tk">HD</td>
+  <td><span class="score" style="--w:14%">14</span></td>
+  <td class="num">331.67</td>
+  <td class="num dn">-2.8%</td>
+  <td class="num">0.4x</td>
+  <td class="num">64</td>
+  <td class="num">2.3%</td>
+  <td class="num">331.67</td>
+  <td class="num dn">345.42<span class="sub">-4.1%</span></td>
+  <td class="num up">308.40<span class="sub">+7.0%</span></td>
+  <td class="num">7</td>
+  <td class="earn muted">งบอีก 14 วัน</td>
+  <td class="ext muted">+0.0%
+    <span class="sub">ในเวลาทำการ</span></td>
 </tr>
 <tr>
   <td class="tk">INTU</td>
-  <td><span class="score" style="--w:12%">12</span></td>
-  <td class="num">352.10</td>
-  <td class="num up">+3.2%</td>
-  <td class="num">1.1x</td>
-  <td class="num">65</td>
+  <td><span class="score" style="--w:8%">8</span></td>
+  <td class="num">348.59</td>
+  <td class="num dn">-1.0%</td>
+  <td class="num">0.3x</td>
+  <td class="num">63</td>
   <td class="num">3.8%</td>
-  <td class="num">352.10</td>
-  <td class="num dn">372.10<span class="sub">-5.7%</span></td>
-  <td class="num up">312.10<span class="sub">+11.4%</span></td>
-  <td class="num">4</td>
+  <td class="num">348.59</td>
+  <td class="num dn">368.54<span class="sub">-5.7%</span></td>
+  <td class="num up">308.68<span class="sub">+11.4%</span></td>
+  <td class="num">5</td>
   <td class="earn muted">งบอีก 16 วัน</td>
-  <td class="ext muted">-0.0%
-    <span class="sub">หลังตลาดปิด</span></td>
+  <td class="ext muted">+0.0%
+    <span class="sub">ในเวลาทำการ</span></td>
 </tr></tbody>
   </table></div>
 </section>
