@@ -54,7 +54,7 @@ footer { color:var(--muted); font-size:12px; margin-top:28px; line-height:1.75 }
 <header>
   <h1>Market Signal Scanner</h1>
   <div class="sub">หุ้นสหรัฐ · ข้อมูลปิดวันที่ 2026-11-12 ·
-    สแกน 244 ตัว ผ่านตัวกรองสภาพคล่อง 236 ตัว<br>รอบระหว่างเวลาทำการ · ราคานอกเวลาคือราคาสด</div>
+    สแกน 244 ตัว ผ่านตัวกรองสภาพคล่อง 236 ตัว<br>รอบนอกเวลาซื้อขาย · ใช้ราคาล่าสุดที่มี</div>
 </header>
 
 <section class="card">
@@ -62,16 +62,16 @@ footer { color:var(--muted); font-size:12px; margin-top:28px; line-height:1.75 }
   <div class="stats">
     <div class="stat"><span>เทรนด์ SPY</span><b class="warn">ขาขึ้นแต่ย่อ (ใต้ EMA50)</b></div>
     <div class="stat"><span>ตลาดเอื้อฝั่ง</span><b class="warn">ทั้งสองฝั่ง (ระวัง)</b></div>
-    <div class="stat"><span>หุ้นเหนือ EMA50</span><b>61%</b></div>
+    <div class="stat"><span>หุ้นเหนือ EMA50</span><b>59%</b></div>
     <div class="stat"><span>หุ้นเหนือ SMA200</span><b>61%</b></div>
-    <div class="stat"><span>สัญญาณทั้งหมด</span><b>7</b></div>
+    <div class="stat"><span>สัญญาณทั้งหมด</span><b>6</b></div>
   </div>
   <div class="note warn">ตลาดก้ำกึ่ง — ทั้งสองฝั่งมีสัญญาณหลอกเยอะ เลือกเฉพาะคะแนนสูงและลดขนาดไม้ลง</div>
-  <div class="note muted">ตัวกรองวันประกาศงบ: ตัดหุ้นที่จะประกาศงบภายใน 5 วันออกแล้ว (1 สัญญาณ)</div>
+  <div class="note muted">ตัวกรองวันประกาศงบ: ตัดหุ้นที่จะประกาศงบภายใน 5 วันออกแล้ว (0 สัญญาณ)</div>
   <div class="note muted">ราคานอกเวลาทำการ: ไม่มีตัวไหนขยับเกิน 3% — แผนเทรดในตารางยังใช้ได้</div>
 </section>
 
-<h3 class="side up">▲ ฝั่งซื้อ (Long) <span class="count">2 สัญญาณ</span></h3>
+<h3 class="side up">▲ ฝั่งซื้อ (Long) <span class="count">1 สัญญาณ</span></h3>
 <section class="card">
   <h2>A · Breakout — ทะลุแนวต้าน 20 วัน <span class="count">0 ตัว</span></h2>
   <div class="scroll"><table>
@@ -95,7 +95,7 @@ footer { color:var(--muted); font-size:12px; margin-top:28px; line-height:1.75 }
   </table></div>
 </section>
 <section class="card">
-  <h2>C · Pullback — ย่อในขาขึ้น (mean reversion) <span class="count">2 ตัว</span></h2>
+  <h2>C · Pullback — ย่อในขาขึ้น (mean reversion) <span class="count">1 ตัว</span></h2>
   <div class="scroll"><table>
     <thead><tr>
       <th>หุ้น</th><th>คะแนน</th><th>ราคา</th><th>1 วัน</th><th>RVOL</th><th>RSI</th>
@@ -103,36 +103,20 @@ footer { color:var(--muted); font-size:12px; margin-top:28px; line-height:1.75 }
       <th>งบ</th><th>นอกเวลา</th>
     </tr></thead>
     <tbody><tr>
-  <td class="tk">ANF</td>
-  <td><span class="score" style="--w:40%">40</span></td>
-  <td class="num">149.74</td>
-  <td class="num dn">-1.4%</td>
-  <td class="num">0.4x</td>
-  <td class="num">46</td>
-  <td class="num">4.7%</td>
-  <td class="num">149.74</td>
-  <td class="num dn">139.07<span class="sub">-7.1%</span></td>
-  <td class="num up">171.06<span class="sub">+14.2%</span></td>
-  <td class="num">9</td>
-  <td class="earn muted">งบอีก 12 วัน</td>
-  <td class="ext muted">+0.0%
-    <span class="sub">ในเวลาทำการ</span></td>
-</tr>
-<tr>
   <td class="tk">PFE</td>
-  <td><span class="score" style="--w:31%">31</span></td>
-  <td class="num">29.00</td>
-  <td class="num dn">-1.5%</td>
-  <td class="num">0.6x</td>
-  <td class="num">46</td>
-  <td class="num">2.5%</td>
-  <td class="num">29.00</td>
-  <td class="num dn">27.90<span class="sub">-3.8%</span></td>
-  <td class="num up">31.20<span class="sub">+7.6%</span></td>
+  <td><span class="score" style="--w:36%">36</span></td>
+  <td class="num">28.83</td>
+  <td class="num dn">-2.1%</td>
+  <td class="num">0.9x</td>
+  <td class="num">44</td>
+  <td class="num">2.6%</td>
+  <td class="num">28.83</td>
+  <td class="num dn">27.73<span class="sub">-3.8%</span></td>
+  <td class="num up">31.04<span class="sub">+7.7%</span></td>
   <td class="num">90</td>
-  <td class="earn muted">งบอีก 82 วัน</td>
-  <td class="ext muted">+0.0%
-    <span class="sub">ในเวลาทำการ</span></td>
+  <td class="earn muted">งบอีก 81 วัน</td>
+  <td class="ext muted">+0.2%
+    <span class="sub">หลังตลาดปิด</span></td>
 </tr></tbody>
   </table></div>
 </section><h3 class="side dn">▼ ฝั่งขายชอร์ต (Short) <span class="count">5 สัญญาณ</span></h3>
@@ -148,7 +132,7 @@ footer { color:var(--muted); font-size:12px; margin-top:28px; line-height:1.75 }
   </table></div>
 </section>
 <section class="card">
-  <h2>E · Distribution — วอลุ่มพุ่ง ปิดอ่อน (แรงขาย) <span class="count">1 ตัว</span></h2>
+  <h2>E · Distribution — วอลุ่มพุ่ง ปิดอ่อน (แรงขาย) <span class="count">3 ตัว</span></h2>
   <div class="scroll"><table>
     <thead><tr>
       <th>หุ้น</th><th>คะแนน</th><th>ราคา</th><th>1 วัน</th><th>RVOL</th><th>RSI</th>
@@ -156,25 +140,57 @@ footer { color:var(--muted); font-size:12px; margin-top:28px; line-height:1.75 }
       <th>งบ</th><th>นอกเวลา</th>
     </tr></thead>
     <tbody><tr>
+  <td class="tk">YETI</td>
+  <td><span class="score" style="--w:85%">85</span></td>
+  <td class="num">38.30</td>
+  <td class="num dn">-10.5%</td>
+  <td class="num">4.9x</td>
+  <td class="num">36</td>
+  <td class="num">5.1%</td>
+  <td class="num">38.30</td>
+  <td class="num dn">41.25<span class="sub">-7.7%</span></td>
+  <td class="num up">32.41<span class="sub">+15.4%</span></td>
+  <td class="num">33</td>
+  <td class="earn muted">งบอีก -1 วัน</td>
+  <td class="ext muted">+0.5%
+    <span class="sub">หลังตลาดปิด</span></td>
+</tr>
+<tr>
+  <td class="tk">SMCI</td>
+  <td><span class="score" style="--w:59%">59</span></td>
+  <td class="num">26.99</td>
+  <td class="num dn">-11.3%</td>
+  <td class="num">2.6x</td>
+  <td class="num">36</td>
+  <td class="num">10.1%</td>
+  <td class="num">26.99</td>
+  <td class="num dn">31.07<span class="sub">-15.1%</span></td>
+  <td class="num up">18.83<span class="sub">+30.2%</span></td>
+  <td class="num">24</td>
+  <td class="earn muted">งบอีก 81 วัน</td>
+  <td class="ext muted">+1.7%
+    <span class="sub">หลังตลาดปิด</span></td>
+</tr>
+<tr>
   <td class="tk">BABA</td>
-  <td><span class="score" style="--w:49%">49</span></td>
-  <td class="num">94.33</td>
+  <td><span class="score" style="--w:53%">53</span></td>
+  <td class="num">94.36</td>
   <td class="num dn">-7.1%</td>
-  <td class="num">2.2x</td>
+  <td class="num">2.7x</td>
   <td class="num">34</td>
   <td class="num">3.9%</td>
-  <td class="num">94.33</td>
-  <td class="num dn">99.82<span class="sub">-5.8%</span></td>
-  <td class="num up">83.35<span class="sub">+11.6%</span></td>
+  <td class="num">94.36</td>
+  <td class="num dn">99.85<span class="sub">-5.8%</span></td>
+  <td class="num up">83.38<span class="sub">+11.6%</span></td>
   <td class="num">18</td>
-  <td class="earn muted">งบอีก 7 วัน</td>
-  <td class="ext muted">-0.0%
-    <span class="sub">ในเวลาทำการ</span></td>
+  <td class="earn muted">งบอีก 6 วัน</td>
+  <td class="ext muted">+0.6%
+    <span class="sub">หลังตลาดปิด</span></td>
 </tr></tbody>
   </table></div>
 </section>
 <section class="card">
-  <h2>F · Rally Fade — เด้งจนซื้อมากเกินในขาลง <span class="count">4 ตัว</span></h2>
+  <h2>F · Rally Fade — เด้งจนซื้อมากเกินในขาลง <span class="count">2 ตัว</span></h2>
   <div class="scroll"><table>
     <thead><tr>
       <th>หุ้น</th><th>คะแนน</th><th>ราคา</th><th>1 วัน</th><th>RVOL</th><th>RSI</th>
@@ -183,67 +199,35 @@ footer { color:var(--muted); font-size:12px; margin-top:28px; line-height:1.75 }
     </tr></thead>
     <tbody><tr>
   <td class="tk">XLU</td>
-  <td><span class="score" style="--w:20%">20</span></td>
-  <td class="num">43.99</td>
-  <td class="num up">+0.4%</td>
-  <td class="num">0.4x</td>
-  <td class="num">65</td>
+  <td><span class="score" style="--w:18%">18</span></td>
+  <td class="num">43.81</td>
+  <td class="num dn">-0.0%</td>
+  <td class="num">0.6x</td>
+  <td class="num">64</td>
   <td class="num">1.4%</td>
-  <td class="num">43.99</td>
-  <td class="num dn">44.90<span class="sub">-2.1%</span></td>
-  <td class="num up">42.15<span class="sub">+4.2%</span></td>
+  <td class="num">43.81</td>
+  <td class="num dn">44.74<span class="sub">-2.1%</span></td>
+  <td class="num up">41.96<span class="sub">+4.2%</span></td>
   <td class="num">108</td>
   <td class="earn muted">ไม่ทราบวันงบ</td>
-  <td class="ext muted">+0.0%
-    <span class="sub">ในเวลาทำการ</span></td>
-</tr>
-<tr>
-  <td class="tk">PEP</td>
-  <td><span class="score" style="--w:17%">17</span></td>
-  <td class="num">142.92</td>
-  <td class="num dn">-0.7%</td>
-  <td class="num">0.5x</td>
-  <td class="num">63</td>
-  <td class="num">2.2%</td>
-  <td class="num">142.92</td>
-  <td class="num dn">147.74<span class="sub">-3.4%</span></td>
-  <td class="num up">133.28<span class="sub">+6.7%</span></td>
-  <td class="num">20</td>
-  <td class="earn muted">งบอีก 82 วัน</td>
-  <td class="ext muted">+0.0%
-    <span class="sub">ในเวลาทำการ</span></td>
+  <td class="ext muted">-0.1%
+    <span class="sub">หลังตลาดปิด</span></td>
 </tr>
 <tr>
   <td class="tk">AVGO</td>
-  <td><span class="score" style="--w:15%">15</span></td>
-  <td class="num">361.22</td>
-  <td class="num up">+4.6%</td>
-  <td class="num">1.3x</td>
+  <td><span class="score" style="--w:17%">17</span></td>
+  <td class="num">364.36</td>
+  <td class="num up">+5.5%</td>
+  <td class="num">1.7x</td>
   <td class="num">59</td>
   <td class="num">4.7%</td>
-  <td class="num">361.22</td>
-  <td class="num dn">386.96<span class="sub">-7.1%</span></td>
-  <td class="num up">309.75<span class="sub">+14.2%</span></td>
+  <td class="num">364.36</td>
+  <td class="num dn">390.10<span class="sub">-7.1%</span></td>
+  <td class="num up">312.89<span class="sub">+14.1%</span></td>
   <td class="num">3</td>
-  <td class="earn muted">งบอีก 27 วัน</td>
-  <td class="ext muted">+0.0%
-    <span class="sub">ในเวลาทำการ</span></td>
-</tr>
-<tr>
-  <td class="tk">CELH</td>
-  <td><span class="score" style="--w:9%">9</span></td>
-  <td class="num">32.19</td>
-  <td class="num dn">-2.6%</td>
-  <td class="num">0.5x</td>
-  <td class="num">63</td>
-  <td class="num">4.5%</td>
-  <td class="num">32.19</td>
-  <td class="num dn">34.35<span class="sub">-6.7%</span></td>
-  <td class="num up">27.87<span class="sub">+13.4%</span></td>
-  <td class="num">46</td>
-  <td class="earn muted">งบอีก 105 วัน</td>
-  <td class="ext muted">-0.0%
-    <span class="sub">ในเวลาทำการ</span></td>
+  <td class="earn muted">งบอีก 26 วัน</td>
+  <td class="ext muted">+0.5%
+    <span class="sub">หลังตลาดปิด</span></td>
 </tr></tbody>
   </table></div>
 </section>
